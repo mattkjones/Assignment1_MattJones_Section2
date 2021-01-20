@@ -1,0 +1,50 @@
+﻿/*this changes text and background for the whole page*/
+body {
+    background-color: beige;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*edit heading font details*/
+h1 {
+    font-size: 50px;
+}
+
+/*puts a border around the intro paragraph*/
+.intro {
+    border: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+
+/*format title above list of three jobs*/
+.threejobs {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+/*format the list of three jobs*/
+.joblist {
+    list-style-position: inside;
+    font-size: 22px;
+}
+
+/*format grader title*/
+.grader {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+/*format the input boxes used to calculate grade*/
+input {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/*format calculate button*/
+.calcbutton {
+    width: 10%;
+}

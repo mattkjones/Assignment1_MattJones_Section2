@@ -1,0 +1,67 @@
+﻿<!--Matt Jones Section 2 Assignment 1-->
+<!--This program is designed to create a simple webpage based on the Non-MVC videos we watched for IS 413-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment1</title>
+    <!--Link css stylesheet-->
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <!-- add icon link -->
+    <link rel="icon" href="img/generic-logo.jpg"
+          type="image/x-icon">
+</head>
+<body>
+    <h1>Matt Jones</h1>
+    <!--Image of something I love doing-->
+    <img src="img/backflip-edited.png" />
+    <!--Paragraph on what I hope to get out of this class-->
+    <p class="intro">I am really excited for this IS 413 class. I am not the most skilled coder in the program by any means, but I enjoy 
+    it and am excited to expand my knowledge and abilities. By the end of the semester, I hope to feel confident in my 
+    abilities with ASP.NET. I also want to continue to develop my problem solving skills. I feel like coding pushes me more
+    than anything when it comes to staying patient and calm while solving problems. I hope that through hard work and consistent
+    effort, I will feel good about my performance this semester in IS 413.</p>
+
+    <!--List of the top 3 jobs I am interested in pursuing upon graduation-->
+    <p class="threejobs">Top 3 Jobs I Am Most Interested in Pursuing Upon Graduation</p>
+    <ul class="joblist">
+        <li>
+            Project Manager
+        </li>
+        <li>
+            Data Analyst
+        </li>
+        <li>
+            Consultant
+        </li>
+    </ul>
+    <!--Grade Calculator (HTML portion)-->
+    <p class="grader">Grade Calculator</p>
+    <form>
+        <!--50%-->
+        <label>Assignments</label>
+        <input id="assign" />
+        <br />
+        <!--10%-->
+        <label>Group Project</label>
+        <input id="group" />
+        <br />
+        <!--10%-->
+        <label>Quizzes</label>
+        <input id="quiz" />
+        <br />
+        <!--20%-->
+        <label>Exams</label>
+        <input id="exam" />
+        <br />
+        <!--10%-->
+        <label>INTEX</label>
+        <input id="INTEX" />
+        <br />
+        <input class="calcbutton" type="submit" value="Calculate" id="submitbutton" onclick="calcGrade()"/>
+    </form>
+
+    <!--bring in the JavaScript file for calculating the grade-->
+    <script src="js/GradeCalc.js"></script>
+</body>
+</html>
