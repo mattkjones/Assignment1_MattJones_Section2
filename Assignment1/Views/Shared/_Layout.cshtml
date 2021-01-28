@@ -1,0 +1,32 @@
+﻿<!--Matt Jones Section 2 Assignment 2-->
+<!--This program is designed to convert assignment 1 into an MVC-type layout-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment1</title>
+    <!--Link css stylesheet-->
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <!-- add icon link -->
+    <link rel="icon" href="~/img/generic-logo.jpg"
+          type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>@ViewBag.Header</h1>
+        <menu>
+            <ul>
+                <li class="firstbullet"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="secondbullet"><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    @RenderBody()
+
+    <!--Load in JQuery-->
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <!--bring in the JavaScript file for calculating the grade-->
+    <script src="~/js/GradeCalc.js"></script>
+</body>
+</html>

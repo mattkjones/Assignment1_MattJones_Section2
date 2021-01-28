@@ -48,3 +48,13 @@ input {
 .calcbutton {
     width: 10%;
 }
+
+/*takes bullet point out*/
+.firstbullet {
+    list-style-type: none;
+}
+
+/*takes bullet point out*/
+.secondbullet {
+    list-style-type: none;
+}

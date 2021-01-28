@@ -1,12 +1,12 @@
 ﻿//Function to calculate the final grade and letter grade
-function calcGrade()
-{
+$("#submitbutton").click(function () {
+
     //declare variables used for grade calculation and set the input variables equal to the input boxes. use parseFloat to make them usable in calculations
-    var assignments = parseFloat(document.getElementById("assign").value);
-    var groupProject = parseFloat(document.getElementById("group").value);
-    var quizzes = parseFloat(document.getElementById("quiz").value);
-    var exams = parseFloat(document.getElementById("exam").value);
-    var INTEX = parseFloat(document.getElementById("INTEX").value);
+    var assignments = parseFloat($("#assign").val());
+    var groupProject = parseFloat($("#group").val());
+    var quizzes = parseFloat($("#quiz").val());
+    var exams = parseFloat($("#exam").val());
+    var INTEX = parseFloat($("#INTEX").val());
     var finalGrade;
     var letterGrade;
 
@@ -18,8 +18,7 @@ function calcGrade()
         (INTEX * .10)
 
     //switch statement to select letter grade based off of final grade
-    switch (true)
-    {
+    switch (true) {
         case finalGrade >= 94:
             letterGrade = "A";
             break;
@@ -60,4 +59,4 @@ function calcGrade()
     //alert the user of their final grade as a percentage as well as their letter grade
     alert(finalGrade + "% which is a " + letterGrade);
 
-}
+});
